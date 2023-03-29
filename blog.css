@@ -1,0 +1,33 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  padding: 2rem;
+  background-color: var(--color-surface-200);
+  border-radius: 0.7rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.card p {
+  color: var(--color-primary-400);
+}
+
+.author-section {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.author-pic {
+  width: 2.8rem;
+}
+
+.bookmark {
+  width: 1.4rem;
+  margin-left: auto;
+}

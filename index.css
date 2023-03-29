@@ -1,0 +1,203 @@
+/** Hero Section **/
+.hero {
+  margin: 4rem 0;
+}
+
+.hero h1 {
+  font-size: clamp(3.2rem, 8vw, 10rem);
+  line-height: 1;
+}
+
+.hero h2 {
+  font-size: clamp(2rem, 5vw, 6rem);
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.hero p {
+  color: #cbcaca;
+  font-size: clamp(1rem, 1.8vw, 2.2rem);
+  margin-bottom: 2rem;
+}
+
+.hero .hero-gradient {
+  background: #121fcf;
+  background: linear-gradient(to right, #2732cb 10%, #cf469d 82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero .btn {
+  font-size: 1.4rem;
+}
+
+/** features Section **/
+.features {
+  margin: 4rem 0;
+}
+
+.features h2 {
+  font-size: max(3.8vw, 2.4rem);
+}
+
+/** Languages Section **/
+.languages {
+  margin: 4rem 0;
+}
+
+.languages h2 {
+  font-size: max(3.2vw, 2rem);
+}
+
+.languages .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.languages .card {
+  background-color: var(--color-surface-200);
+  cursor: pointer;
+  padding: 1.2rem 0.6rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-surface-300);
+}
+
+.languages .card:hover {
+  background-color: var(--color-surface-400);
+  scale: 1.1;
+  transition: all 150ms;
+}
+
+.languages .card h3 {
+  font-size: max(50%, 2.2rem);
+  font-weight: bold;
+  letter-spacing: -0.025em;
+}
+
+/*! Exported with https://markflow.app */
+/*! Inherited styles from parent elements */
+/* body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  color: #1b1b18;
+  line-height: 1.5
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-top: 0 solid #e5e7eb;
+  border-right: 0 solid #e5e7eb;
+  border-bottom: 0 solid #e5e7eb;
+  border-color: #e5e7eb;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  box-sizing: inherit
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit
+}
+
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0
+}
+
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  display: block;
+  vertical-align: middle
+}
+
+.mb-4 {
+  margin-bottom: 1rem
+}
+
+.mr-2 {
+  margin-right: 0.5rem
+}
+
+.mt-2 {
+  margin-top: 0.5rem
+}
+
+.inline-block {
+  display: inline-block
+}
+
+.rounded-xl {
+  border-radius: 0.75rem
+}
+
+.border {
+  border-width: 1px
+}
+
+.bg-gray-3 {
+  background-color: #f3f3f2
+}
+
+.p-4 {
+  padding: 1rem
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem
+}
+
+.font-bold {
+  font-weight: 700
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em
+}
+
+.text-gray-11 {
+  color: #706f6c
+}
+
+.text-gray-12 {
+  color: #1b1b18
+} */
