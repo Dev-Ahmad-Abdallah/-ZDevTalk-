@@ -1,0 +1,215 @@
+/*** GLOBAL STYLES ***/
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+
+  --color-primary-500: #fffdfa;
+  --color-primary-400: #c6c5c3;
+  --color-primary-300: #918f8e;
+  --color-primary-200: #5e5e5d;
+  --color-primary-100: #303030;
+
+  --color-surface-100: #121212;
+  --color-surface-200: #282828;
+  --color-surface-300: #3f3f3f;
+  --color-surface-400: #575757;
+  --color-surface-500: #717171;
+  --color-surface-600: #8b8b8b;
+  
+}
+
+/* Set default font size and line height */
+html {
+  font-size: 16px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* Set default font family and color */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #fafafa;
+  background-color: var(--color-surface-100);
+}
+
+/* Add some basic styles to links */
+a {
+  text-decoration: none;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*** Layout ***/
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+/*** NAVBAR ***/
+.header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  height: 4rem;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: var(--color-surface-100);
+}
+
+.header .brand {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-primary-500);
+}
+
+.burger {
+  display: none;
+}
+
+.burger-menu-toggle {
+  display: none;
+}
+
+.burger-menu-toggle:checked ~ .nav {
+  position: fixed;
+  top: 4rem;
+  width: 100%;
+  left: 0;
+  height: calc(100vh - 4rem);
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  background-color: var(--color-surface-100);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.menu a:hover {
+  background-color: var(--color-surface-200);
+  transition: all 150ms;
+}
+
+/*** Footer ***/
+.footer {
+  background-color: var(--color-surface-400);
+  padding: 40px 0;
+  margin-top: 4rem;
+}
+
+.footer h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/*** Button ***/
+.btn {
+  padding: 0.9rem 1rem;
+  border-radius: 0.4rem;
+  transition: all 150ms;
+  font-weight: 500;
+  color: inherit;
+}
+
+.btn-primary {
+  color: var(--color-primary-100);
+  background-color: var(--color-primary-500);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-400);
+}
+
+.btn-secondary {
+  background-color: var(--color-surface-300);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary-200);
+}
+
+/* 1. xs (extra small) - Up to 576 pixels wide  MOBILE
+2. sm (small) - From 576 pixels to 768 pixels wide  TABLET
+3. md (medium) - From 768 pixels to 992 pixels wide LAPTOP SMALL
+4. lg (large) - From 992 pixels to 1200 pixels wide LAPTOP*/
+
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  .menu li {
+    width: 100%;
+  }
+  .menu a {
+    width: 100%;
+    display: block;
+  }
+
+  .header .btn {
+    width: 100%;
+  }
+
+  .burger {
+    display: block;
+  }
+}

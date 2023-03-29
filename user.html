@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="user.css">
+  <title>User</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="/" class="brand">&lt;ZDevTalk/&gt;</a>
+
+    <label class="burger" for="burger-menu-toggle">
+      <svg width="50" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 22L64 22" stroke="#C2CCDE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M16 40L64 40" stroke="#C2CCDE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M16 58L64 58" stroke="#C2CCDE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </label>
+    <input class="burger-menu-toggle" id="burger-menu-toggle" type="checkbox" />
+
+    <div class="nav">
+      <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Languages</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="#">Competition</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <a class="btn btn-secondary" href="auth/login.html">Login</a>
+      <a class="btn btn-primary" href="auth/signup.html">Sign Up</a>
+    </div>
+  </header>
+
+  <div class="container center">
+    <div class="wrapper">
+      <aside>
+        <nav class="side-nav">
+          <ul>
+            <a href="#profile">
+              <li>
+                Profile
+              </li>
+            </a>
+            <a href="#orders">
+              <li>
+                Order
+              </li>
+            </a>
+            <a href="#stats">
+              <li>
+                Stats
+              </li>
+            </a>
+          </ul>
+        </nav>
+      </aside>
+      <div class="content">
+        <section id="profile">
+          <h2>Profile</h2>
+          <div>
+            <form>
+              <label>
+                Name
+                <input type="text" name="name" required>
+              </label>
+
+              <label>
+                Email
+                <input type="email" name="email" required>
+              </label>
+
+              <label>
+                Password
+                <input type="password" name="password" minlength="8">
+              </label>
+
+              <label>
+                Birthdate
+                <input type="date" name="birthdate">
+              </label>
+              <label>
+                Bio
+                <textarea name="bio" rows="4"></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit">Save</button>
+            </form>
+          </div>
+        </section>
+        <section id="orders">
+          <h2>Orders</h2>
+        </section>
+        <section id="stats">
+          <h2>Stats</h2>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- <header class="header">
+    <a href="/" class="brand">&lt;ZDevTalk/&gt;</a>
+
+    <label class="burger" for="burger-menu-toggle">
+      <svg width="50" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 22L64 22" stroke="#C2CCDE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M16 40L64 40" stroke="#C2CCDE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M16 58L64 58" stroke="#C2CCDE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </label>
+    <input class="burger-menu-toggle" id="burger-menu-toggle" type="checkbox" />
+
+    <div class="nav">
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Languages</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Competition</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <a class="btn btn-secondary" href="#">Sign Out</a>
+      <a class="btn btn-primary" href="#">User</a>
+    </div>
+  </header>
+
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <ul>
+          <li>
+            <a href="#profile">
+              <i class="material-icons">account_circle</i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="#security">
+              <i class="material-icons">security</i>
+              <span>Security</span>
+            </a>
+          </li>
+          <li>
+            <a href="#notifications">
+              <i class="material-icons">notifications</i>
+              <span>Notifications</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <main class="content">
+        <h1>User Settings Dashboard</h1>
+        <section id="profile">
+          <h2>Profile</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="bio">Bio</label>
+              <textarea id="bio" name="bio"></textarea>
+            </div>
+            <button type="submit">Save changes</button>
+          </form>
+        </section>
+      </main>
+    </div> -->
+</body>
+<!-- <h1>User Dashboard</h1> -->
+<!-- <div class="row">
+      <div class="col">
+        <div class="card">
+          <h2 class="card-title">Profile</h2>
+          <p class="card-text">Update your personal information and settings.</p>
+          <ul class="card-list">
+            <li class="card-item">Edit profile</li>
+            <li class="card-item">Change password</li>
+            <li class="card-item">Email preferences</li>
+          </ul>
+          <a href="#" class="button button-primary">Go to Profile</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-success">
+          <h2 class="card-title">Orders</h2>
+          <p class="card-text">View your past orders and track your current ones.</p>
+          <ul class="card-list">
+            <li class="card-item">View orders</li>
+            <li class="card-item">Track orders</li>
+            <li class="card-item">Cancel orders</li>
+          </ul>
+          <a href="#" class="button button-success">Go to Orders</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-danger">
+          <h2 class="card-title">Payments</h2>
+          <p class="card-text">View your payment methods and manage your subscriptions.</p>
+          <ul class="card-list">
+            <li class="card-item">View payments</li>
+            <li class="card-item">Add payment method</li>
+            <li class="card-item">Manage subscriptions</li>
+          </ul>
+          <a href="#" class="button button-danger">Go to Payments</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-warning">
+          <h2 class="card-title">Courses</h2>
+          <p class="card-text">New Courses</p>
+          <ul class="card-list">
+            <li class="card-item">Find Courses</li>
+            <li class="card-item">Course history</li>
+          </ul>
+          <a href="#" class="button button-warning">Go to Courses</a>
+        </div>
+      </div>
+    </div> -->
+</div>
+</body>
+
+</html>
