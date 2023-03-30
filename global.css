@@ -20,7 +20,6 @@
   --color-surface-400: #575757;
   --color-surface-500: #717171;
   --color-surface-600: #8b8b8b;
-  
 }
 
 /* Set default font size and line height */
@@ -88,7 +87,7 @@ img {
   background-color: var(--color-surface-100);
 }
 
-.header .brand {
+.brand {
   font-size: 1.6rem;
   font-weight: 800;
   color: var(--color-primary-500);
@@ -140,16 +139,40 @@ img {
 
 /*** Footer ***/
 .footer {
-  background-color: var(--color-surface-400);
-  padding: 40px 0;
+  border-top: 1px solid var(--color-primary-200);
   margin-top: 4rem;
+  padding: 2rem;
 }
 
-.footer h4 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 20px;
+.footer .footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer .brand {
+  font-size: 1.4rem;
+}
+
+.footer .slogan {
+  font-weight: 400;
+}
+
+.footer .socials {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.6rem;
+}
+
+.footer .socials i {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.footer .socials i:hover {
+  cursor: pointer;
+  background-color: var(--color-surface-400);
 }
 
 /*** Button ***/
@@ -182,6 +205,12 @@ img {
 2. sm (small) - From 576 pixels to 768 pixels wide  TABLET
 3. md (medium) - From 768 pixels to 992 pixels wide LAPTOP SMALL
 4. lg (large) - From 992 pixels to 1200 pixels wide LAPTOP*/
+
+@media screen and (max-width: 768px) {
+  .footer .footer-inner {
+    flex-direction: column;
+  }
+}
 
 @media screen and (max-width: 992px) {
   .nav {
