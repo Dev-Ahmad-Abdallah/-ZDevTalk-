@@ -1,46 +1,38 @@
 html {
   scroll-behavior: smooth;
-  scroll-snap-align: end;
 }
 
 .wrapper {
-  display: flex;
-  gap: 3rem;
-  margin-top: 2rem;
-  position: relative;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 1rem;
 }
 
-aside {
-  flex: 1;
-  position: sticky;
-  height: 25vh;
-  top: 4.2rem;
-}
-
-.side-nav ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  gap: 1rem;
-}
-
-.side-nav a {
-  color: white;
+.side-nav {
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 .side-nav li {
-  padding: 1rem 2rem;
-  background-color: var(--color-surface-200);
-  border-radius: 0.5rem;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  font-weight: 300;
 }
 
 .side-nav li:hover {
-  background-color: var(--color-surface-400);
+  cursor: pointer;
+  background-color: var(--color-surface-300);
+  text-decoration: underline;
 }
 
 .content {
-  flex: 4;
+  grid-column-start: 2;
+  grid-column-end: 5;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -79,4 +71,107 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+table {
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.stats h3 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.stats h3 > span {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.month {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.year {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.weekdays {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.weekday {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-number {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.day-submission {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.submission-none {
+  background-color: #e6e6e6;
+}
+
+.submission-attempted {
+  background-color: #f5c971;
+}
+
+.submission-submitted {
+  background-color: #95cfd5;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

@@ -7,7 +7,6 @@ Note: All css for the component's are in the global css file
 ```html
   <header class="header">
     <a href="/" class="brand">&lt;ZDevTalk/&gt;</a>
-
     <label class="burger" for="burger-menu-toggle">
       <svg width="50" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M16 22L64 22" stroke="#C2CCDE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
@@ -16,7 +15,6 @@ Note: All css for the component's are in the global css file
       </svg>
     </label>
     <input class="burger-menu-toggle" id="burger-menu-toggle" type="checkbox" />
-
     <div class="nav">
       <ul class="menu">
         <li><a href="/">Home</a></li>
@@ -27,6 +25,12 @@ Note: All css for the component's are in the global css file
             <a href="/blog.html">Blog</a>
             <a href="/forum.html">Forum</a>
           </div>
+        </li>
+        <li class="dropdown-mobile">
+          <a href="/blog.html">Blog</a>
+        </li>
+        <li class="dropdown-mobile">
+          <a href="/forum.html">Forum</a>
         </li>
         <li><a href="/competition.html">Competition</a></li>
         <li><a href="/store.html">Store</a></li>

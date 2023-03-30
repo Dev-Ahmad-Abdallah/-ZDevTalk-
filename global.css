@@ -30,6 +30,16 @@ html {
 p {
   line-height: 1.5;
 }
+ul,
+ol,
+dl {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* Set default font family and color */
 body {
@@ -59,13 +69,17 @@ input[type="reset"] {
 /* Responsive Images */
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 /*** Layout ***/
 .container {
   max-width: 1200px;
   padding: 0 15px;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .center {
@@ -147,7 +161,7 @@ img {
   gap: 1rem;
   position: absolute;
   top: 2rem;
-  background-color: var(--color-surface-200);
+  background-color: var(--color-surface-100);
   padding: 0.8rem 1rem;
   border-radius: 0.5rem;
 }
@@ -159,6 +173,10 @@ img {
 .dropdown-content a:hover {
   background-color: var(--color-surface-400);
   transition: all 150ms;
+}
+
+.dropdown-mobile {
+  display: none;
 }
 
 /*** Footer ***/
@@ -201,11 +219,13 @@ img {
 
 /*** Button ***/
 .btn {
+  display: block;
   padding: 0.9rem 1rem;
   border-radius: 0.4rem;
   transition: all 150ms;
   font-weight: 500;
   color: inherit;
+  text-align: center;
 }
 
 .btn-primary {
@@ -237,6 +257,12 @@ img {
 }
 
 @media screen and (max-width: 992px) {
+  .dropdown {
+    display: none;
+  }
+  .dropdown-mobile {
+    display: block;
+  }
   .nav {
     display: none;
     flex-direction: column;
