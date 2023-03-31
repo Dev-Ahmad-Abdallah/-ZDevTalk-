@@ -109,13 +109,13 @@ td {
 }
 
 .month {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-right: 10px;
 }
 
 .year {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -128,7 +128,7 @@ td {
 }
 
 .weekday {
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
@@ -145,7 +145,7 @@ td {
 }
 
 .day-number {
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 5px;
 }

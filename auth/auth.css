@@ -54,7 +54,7 @@ input[type="password"] {
   border-radius: 0.4rem;
   outline: none;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .form-box input[type="text"]:focus,
