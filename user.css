@@ -95,77 +95,8 @@ td {
   font-size: 1.8rem;
 }
 
-.calendar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.calendar-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.month {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.year {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.weekdays {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.weekday {
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.days {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
-}
-
-.day {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.day-number {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.day-submission {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-}
-
-.submission-none {
-  background-color: #e6e6e6;
-}
-
-.submission-attempted {
-  background-color: #f5c971;
-}
-
-.submission-submitted {
-  background-color: #95cfd5;
+.stats img {
+  height: initial;
 }
 
 @media screen and (max-width: 768px) {

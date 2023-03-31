@@ -14,7 +14,7 @@ Note: All css for the component's are in the global css file
         <path d="M16 58L64 58" stroke="#C2CCDE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </label>
-    <input class="burger-menu-toggle" id="burger-menu-toggle" type="checkbox" />
+    <input class="burger-menu-toggle" id="burger-menu-toggle" type="checkbox" >
     <div class="nav">
       <ul class="menu">
         <li><a href="/">Home</a></li>
