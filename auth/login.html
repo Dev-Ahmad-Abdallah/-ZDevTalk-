@@ -63,19 +63,20 @@
     </div>
   </div>
 
-  <script>
-    document.getElementById("loginForm").addEventListener("submit", function (e) {
-      e.preventDefault(); // Prevent form from submitting normally
+<script>
+  document.getElementById("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent form from submitting normally
 
-      const username = e.target.username.value;
-      const password = e.target.password.value;
+    const username = e.target.username.value;
+    const password = e.target.password.value;
 
-      if (username === "user" && password === "user") {
-        window.location.href = "index.html";
-      } else {
-        alert("Incorrect username or password.");
-      }
-    });
-  </script>
+    if (username === "user" && password === "user") {
+      window.location.href = "../index.html"; // go to root index.html
+    } else {
+      alert("Incorrect username or password.");
+    }
+  });
+</script>
+
 </body>
 </html>
